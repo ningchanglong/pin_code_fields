@@ -475,10 +475,11 @@ class _PinCodeTextFieldState extends State<PinCodeTextField>
 
           if (widget.autoDismissKeyboard) _focusNode!.unfocus();
         }
+        _setTextToInput(currentText);
         widget.onChanged?.call(currentText);
       }
 
-      _setTextToInput(currentText);
+
     });
   }
 
